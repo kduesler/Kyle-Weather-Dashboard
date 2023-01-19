@@ -1,0 +1,14 @@
+.card-group {
+    display: flex;
+}
+
+.card1 {
+    border:10px black;
+    padding: 2px;
+    width: 100%;
+}
+
+.card {
+    width: 25%;
+    border: 10px;
+}
