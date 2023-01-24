@@ -77,7 +77,7 @@ function renderHistory() {
 
     let li = document.createElement("li");
     li.textContent = citySearch;
-    li.setAttribute("data-index", i);
+    li.setAttribute("data-index", i)
 
     li.addEventListener("click", function () {
       fetchWeather(citySearch);
