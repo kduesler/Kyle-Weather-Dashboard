@@ -1,14 +1,37 @@
-.card-group {
+/* body {
     display: flex;
 }
+h1{
+    text-align: center;
+}
+
+main{
+    display: flex;
+    position: absolute;
+    right: 0px;
+}
+aside {
+    display: flex;
+    position: absolute;
+    left: 0px;
+}
+
+
 
 .card1 {
-    border:10px black;
-    padding: 2px;
     width: 100%;
+    padding: 2px;
+    background-color: aquamarine;
+    
 }
 
 .card {
-    width: 25%;
-    border: 10px;
+    background-color: grey;
+    padding: 2px;
+    
+   
+} */
+
+* {
+    box-sizing: border-box;
 }
