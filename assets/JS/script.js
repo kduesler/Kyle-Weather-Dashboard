@@ -57,7 +57,7 @@ function renderWeather(data) {
 function fetchWeather(city) {
   cityHeader.textContent = city;
   let queryURL =
-    "http://api.openweathermap.org/data/2.5/forecast?q=" +
+    "https://api.openweathermap.org/data/2.5/forecast?q=" +
     city +
     "&appid=" +
     APIKey +
