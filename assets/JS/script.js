@@ -30,7 +30,7 @@ let searchHistory = [];
 function renderWeather(data) {
   for (let i = 0; i <= 32; i += 8) {
     let tempEl = document.querySelector(`#temp${i}`);
-    tempEl.textContent = `Temp: ${data.list[i].main.temp}`;
+    tempEl.textContent = `Temp: ${data.list[i].main.temp} °F`;
   }
 
   for (let i = 0; i <= 32; i += 8) {
@@ -79,7 +79,7 @@ function renderHistory() {
     const citySearch = searchHistory[i];
 
     let li = document.createElement("li");
-    li.textContent = citySearch;
+    li.textContent = citySearch + " ";
     li.setAttribute("data-index", i);
 
     li.addEventListener("click", function () {

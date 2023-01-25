@@ -15,15 +15,14 @@ main {
     display: flex;
     width: 80%;
     float: right;
+    margin: 8px;
 }
 
-.card1{
-    width: 100%;
-}
 
 aside {
     width: 15%;
     float: left;
+    margin: 3px;
 }
 
 #recent-searches {
@@ -35,8 +34,4 @@ aside {
 
 li {
     list-style: none;
-}
-
-li.button {
-    margin-left:
 }
