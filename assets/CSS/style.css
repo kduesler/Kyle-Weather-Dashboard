@@ -28,8 +28,15 @@ aside {
 
 #recent-searches {
     text-align: right;
+    margin-right: 3px;
 }
+
+
 
 li {
     list-style: none;
+}
+
+li.button {
+    margin-left:
 }

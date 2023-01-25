@@ -1,3 +1,5 @@
+
+
 const APIKey = "6c34cdcabb1cb26f290379ff7a6a723b";
 const searchBtnEl = document.querySelector("#search-btn");
 const clearHistoryBtnEl = $("#clear-history");
@@ -66,6 +68,7 @@ function fetchWeather(city) {
     })
     .then(function (data) {
       renderWeather(data);
+      console.log(data)
     });
 }
 
@@ -77,7 +80,7 @@ function renderHistory() {
 
     let li = document.createElement("li");
     li.textContent = citySearch;
-    li.setAttribute("data-index", i)
+    li.setAttribute("data-index", i);
 
     li.addEventListener("click", function () {
       fetchWeather(citySearch);
@@ -120,6 +123,18 @@ searchBtnEl.addEventListener("click", function (event) {
   fetchWeather(cityText);
 });
 
+$(document).ready(function () {
+  $(searchList).click(function (event) {
+    let element = event.target;
+    if (element.matches("button") === true) {
+      let index = element.parentElement.getAttribute("data-index");
+      searchHistory.splice(index, 1);
+
+      storeCities();
+      renderHistory();
+    }
+  });
+});
 
 loadPage();
 
